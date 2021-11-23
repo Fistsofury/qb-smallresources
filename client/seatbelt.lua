@@ -55,7 +55,7 @@ RegisterNetEvent('seatbelt:client:UseHarness', function(ItemData) -- On Item Use
             harnessData = ItemData
         else
             LocalPlayer.state:set("inv_busy", true, true)
-            QBCore.Functions.Progressbar("harness_equip", "Removing Race Harness", 5000, false, true, {
+            QBCore.Functions.Progressbar("harness_equip", "Removing Race Harness", 1500, false, true, {
                 disableMovement = false,
                 disableCarMovement = false,
                 disableMouse = false,
